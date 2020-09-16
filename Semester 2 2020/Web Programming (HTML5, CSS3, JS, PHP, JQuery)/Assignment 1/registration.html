@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<title>ABC Registration</title>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="styles/IndexStyle.css">
+    <script src="scripts/script.js"></script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="header" id="header">Adrenaline Buzz Club || Join the Club, Feel the Buzz!</div>
+        <div class="logo" id="logo">
+            <div class="logoInfo">
+                <div class="logoCircle">
+                    <h1><a href="https://titan.csit.rmit.edu.au/~s3773064/wp/a1/index.html">ABC</a></h1>
+                </div>
+            </div>
+        </div>
+        <div class="navbar" id="navbar">
+            <a href="https://titan.csit.rmit.edu.au/~s3773064/wp/a1/index.html">Home</a>
+            <a href="https://titan.csit.rmit.edu.au/~s3773064/wp/a1/services.html">Services</a>
+            <a href="https://titan.csit.rmit.edu.au/~s3773064/wp/a1/registration.html">Registration</a>
+            <a href="https://titan.csit.rmit.edu.au/~s3773064/wp/a1/contactUs.html">Contact Us</a></div>
+        <div class="content" id="content">
+            <h1>Membership Registration</h1>
+            <h2>Personal Details</h2>
+            <form id="regForm" name="registration" onsubmit="return validateReg()">
+                <div class="form">
+
+                    <div><label class="label">First Name:</label><input type="text" name="fName" id="fName"
+                            placeholder="required" /> </div>
+                    <div class="error" id="fNameMsg">Please enter a First Name</div>
+
+                    <div><label class="label">Surname:</label><input type="text" name="surname" id="surname"
+                            placeholder="required" /></div>
+                    <div class="error" id="surnameMsg">Please enter a Surname</div>
+
+                    <div><label class="label">Email:</label><input type="text" name="email" id="email"
+                            placeholder="required" /></div>
+                    <div class="error" id="emailMsg">Not a valid e-mail address</div>
+
+                    <div><label class="label">Address:</label><textarea name="address" id="address"
+                            placeholder="optional"></textarea></div>
+
+                    <div><span class="checkLabel">Reffered? </span><input type="checkbox" id="checkYes"
+                            name="refferedyes" value="Yes" onchange="calculator(); showCalculator(); refferedByWho()">Yes
+                        <input type="checkbox" id="checkNo" name="referredNo" value="No">No </div>
+                    <div class="error" id="checkMsg">Please select referal status</div>
+                    <div class="refferedByWho" id="byWho">By Who? <input type="text" placeholder="Member Name Here"></div>
+
+                    <div><span class="agelabel">Age: (Use Slider)</span></div>
+                    <input type="range" value="1" min="1" max="100" name="ageSlider" id="ageSlider"
+                        oninput="ageUpdate(value)" />
+                    <div><span class="output"></span>Age: <output for="ageSlider" id="ageOutput">1</output></div>
+                    <div class="error" id="ageMsg">Must be at least 16 years old</div>
+
+                    <h2>Membership Details</h2>
+                    <p>
+                    <div><span class="memLabel">Membership Type: </span><select name="membership" id="calc"
+                            onchange="showCalculator(this.value)">
+                            <option value="select">-select-</option>
+                            <option value="individual">Individual</option>
+                            <option value="family">Family</option>
+                        </select></div>
+                    <div class="error" id="membershipMsg">Please select a membership</div>
+                    </p>
+                </div>
+                <div class="singleMember" id="singleMember">Total Cost: $50/month</div>
+                <div class="singleMember" id="singleMemberDiscount">Total Cost: $47.50/month</div>
+                <div class="memCalculator" id="memCalc">
+                    <div>
+                        <label class="label">Number of Members on Plan: </label>
+                        <input type="text" id="members" name="members" placeholder="required" oninput="calculator()">
+                    </div>
+                    <div>
+                        <label class="label">Number of Members between the ages of 16 and 19? </label>
+                        <input type="text" id="youth" name="youth" placeholder="required" oninput="calculator()">
+                    </div>
+                    <div class="cost"><span class="costOutput">Total Cost: </span><output for="members"
+                            id="costOutput">$0</output>
+                    </div>
+                    <div class="minFamily" id="minFamily">Need at least 2 members for Family Membership</div>
+                    <div class="tooManyYouths" id="tooManyYouths">You have entered too many members between the ages of
+                        16 and 19</div>
+                </div>
+                <p>
+                <div><span class="memLabel">Membership Duration: </span><select name="duration" id="duration">
+                        <option value="select">-select-</option>
+                        <option value="ongoing">Ongoing</option>
+                        <option value="3month">3 Months</option>
+                        <option value="6month">6 Months</option>
+                        <option value="yearly">Yearly</option>
+                    </select></div>
+                <div class="error" id="durationMsg">Please select a membership duration</div>
+                </p>
+                <div><span class="submit"></span><input type="submit" value="Submit" onclick="return validateReg()" />
+                </div>
+            </form>
+        </div>
+        <div class="footer" id="footer">
+            <div class="credit">
+                &copy; Patrick Armstrong 2020
+            </div>
+
+            <div class="legal">
+                <a href="">Sitemap</a>
+                <a href="">Privacy</a></div>
+        </div>
+    </div>
+</body>
+
+</html>
