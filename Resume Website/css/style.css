@@ -23,11 +23,19 @@ body {
     color: #fff;
 }
 
-#USContact {
+#USContactAddr {
     display: none;
 }
 
-#AUContact {
+#USContactNo {
+    display: none;
+}
+
+#AUContactAddr {
+    display: none;
+}
+
+#AUContactNo {
     display: none;
 }
 
