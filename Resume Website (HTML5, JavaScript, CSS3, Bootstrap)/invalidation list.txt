@@ -1,0 +1,7 @@
+/assets/*
+/contact.html
+/education.html
+/index.html
+/experience.html
+/scripts/*
+/css/*
