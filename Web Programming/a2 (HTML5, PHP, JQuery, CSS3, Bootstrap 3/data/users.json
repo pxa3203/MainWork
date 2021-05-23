@@ -1,0 +1,11 @@
+{
+    "jdoe@test.com": {
+        "fName": "J",
+        "surname": "Doe",
+        "email": "jdoe@test.com",
+        "address": "",
+        "ageSlider": "19",
+        "check": "check",
+        "password-hash": "$2y$10$FvrwuEgAtAEPRsmsvl4y$.5hMVyQ5sFGYmsM4CQjnUma51Fe8Uea2"
+    }
+}

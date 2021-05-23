@@ -1,0 +1,10 @@
+{
+    "jdoe@test.com": {
+        "running": [
+            {
+                "date": "22-12-2020",
+                "minutes": 20
+            }
+        ]
+    }
+}

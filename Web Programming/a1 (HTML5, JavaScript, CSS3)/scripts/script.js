@@ -120,7 +120,7 @@ function youthCheck() {
         return false;
     }
 }
-//This function decides whether to show the calculator based on what type of membership is selected.
+
 function showCalculator() {
     membership = document.getElementById("calc").value;
     if (membership == "individual") {
@@ -148,8 +148,7 @@ function showCalculator() {
     }
 }
 
-//the primary sorting of my function is how many members are entered into the input box. Then it checks if the member is referred. Lastly it checks on the numbers of youths (aged 16 - 19) entered in the input
-//box. The bulk of the work is done in printCost(). Please read above printCost() function to understand that code. 
+
 function calculator() {
     members = document.getElementById("members").value;
     youths = document.getElementById("youth").value;
@@ -220,12 +219,7 @@ function calculator() {
                 }
             }
             else {
-                if (youthCheck() == true) {
-                    document.getElementById("tooManyYouths").style.display = "inline";
-                }
-                else {
-                    printCost();
-                }
+                printCost();
             }
         }
         else {
@@ -248,28 +242,17 @@ function calculator() {
                 }
             }
             else {
-                if (youthCheck() == true) {
-                    document.getElementById("tooManyYouths").style.display = "inline";
-                }
-                else {
-                    printCost();
-                }
+                printCost();
             }
         }
         else {
-            if (individualReferred() == true) {
-                printCost();
-            }
-            else {
-                printCost();
-            }
+            printCost();
         }
     }
 }
 
 
-//the printCost() function is the main calculations for the membership calculator. It sets all the entered details to variables, and then sets the discount based on how many members there are. It checks to make
-//sure the discount doesnt become too large based on the number of members. Then the function does simple math to calculate the total with the discounts. Then outputs the total and updates the client-side.
+
 function printCost() {
     members = document.getElementById("members").value;
     youths = document.getElementById("youth").value;
@@ -299,10 +282,9 @@ function printCost() {
     }
 }
 
-//opens member name box when yes box is checked under the reffered question on the Registration page.
-function refferedByWho() {
-    checkBox = document.getElementById("checkYes").checked;
 
+function refferedByWho() {
+    checkBox = document.getElementById("checkYes");
     if (checkBox != ""){
         document.getElementById("byWho").style.display = "inline";
     }

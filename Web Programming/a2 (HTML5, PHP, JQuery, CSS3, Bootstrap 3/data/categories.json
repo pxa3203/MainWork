@@ -1,0 +1,25 @@
+{
+    "running": {
+        "key": "running",
+        "name": "Running",
+        "image-name": "running.jpeg"
+    },
+
+    "lifting": {
+        "key": "lifting",
+        "name": "Lifting",
+        "image-name": "lifting.jpeg"
+    },
+
+    "swimming": {
+        "key": "swimming",
+        "name": "Swimming",
+        "image-name": "swimming.jpeg"
+    },
+
+    "yoga": {
+        "key": "yoga",
+        "name": "Yoga",
+        "image-name": "yoga.jpeg"
+    }
+}

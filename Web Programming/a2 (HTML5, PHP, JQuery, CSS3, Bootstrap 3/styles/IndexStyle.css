@@ -1,0 +1,426 @@
+/* external CSS */
+
+
+/* all my own CSS */
+
+body {
+    background-color: #E9E9E8;
+    color: #0b2a69;
+    text-align: center;
+}
+
+h1 {
+    color: #0b2a69;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px
+}
+
+h2 {
+    color: #0b2a69;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px
+}
+
+h3 {
+    color: #0b2a69;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 9px
+}
+
+p {
+    color: #0b2a69;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 25px
+}
+
+
+/* the fractions for the columns are done to have logo smallest as possible */
+
+.main {
+    display: grid;
+    grid-template-columns: 10fr 10fr 10fr 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    background-color: #E9E9E8;
+    padding: 3px;
+    border-color: #0b2a69;
+}
+
+.header {
+    text-align: left;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    border: 5px;
+    padding: 5px;
+    color: #FFFFFF;
+    font-size: 28pt;
+    line-height: 50pt;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #0b2a69;
+    font-style: italic;
+}
+
+.navbar {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color: #0b2a69;
+    border-top: 5px solid #E9E9E8;
+    border-bottom: 5px solid #E9E9E8;
+    height: fit-content;
+}
+
+.navbar a {
+    float: left;
+    color: #E9E9E8;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 4px;
+}
+
+.navbar a:active {
+    background-color: #E9E9E8;
+    color: #0b2a69;
+    border: 10px;
+    border-radius: 20%
+}
+
+.navbar a:hover {
+    background-color: #E9E9E8;
+    color: #0b2a69;
+    border: 10px;
+    border-radius: 20%
+}
+
+.stick {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.stick+.content {
+    padding-top: 102px;
+}
+
+.logo {
+    text-align: center;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    border: 3px solid #0b2a69;
+    background-color: #E9E9E8;
+}
+
+.logo .logoInfo {
+    width: 70px;
+    margin: 0;
+}
+
+.logo .logoInfo .logoCircle {
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    background: #0b2a69;
+    position: absolute;
+}
+
+.logo a {
+    text-decoration: none;
+    font-style: italic;
+    color: #E9E9E8;
+}
+
+.content {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 6;
+    border: 10px solid #0b2a69;
+    color: #000000;
+    padding: 5pt;
+}
+
+.footer {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    border: 10px solid #0b2a69;
+    padding: 10px;
+    background-color: #E9E9E8;
+    font-size: 18px;
+}
+
+.footer .credit {
+    float: left;
+}
+
+.footer .legal {
+    float: right;
+}
+
+#ageSlider {
+    color: #0B1D42;
+    font-family: arial;
+    width: 75%;
+    vertical-align: center;
+}
+
+#regForm .error {
+    display: none;
+}
+
+#regForm .form .label {
+    display: inline-block;
+    width: 150px;
+    margin-right: 10px;
+}
+
+.login .label {
+    display: inline-block;
+    width: 100px;
+    margin-right: 10px;
+}
+
+.login input[type=password] {
+    color: #0b2a69;
+    font-family: arial;
+    background-color: #E9E9E8;
+    width: 15%;
+    padding: 3pt;
+    border-radius: 5pt;
+    margin: 5pt;
+}
+
+#regForm .form .memLabel {
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+}
+
+#regForm .form input[type=text] {
+    color: #0b2a69;
+    font-family: arial;
+    background-color: #E9E9E8;
+    width: 15%;
+    padding: 3pt;
+    border-radius: 5pt;
+    margin: 5pt;
+}
+
+#regForm .form input[type=password] {
+    color: #0b2a69;
+    font-family: arial;
+    background-color: #E9E9E8;
+    width: 15%;
+    padding: 3pt;
+    border-radius: 5pt;
+    margin: 5pt;
+}
+
+#regForm input[type=submit] {
+    color: #0b2a69;
+    font-family: arial;
+    background-color: #E9E9E8;
+    width: 15%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    border-radius: 5pt;
+}
+
+#regForm .form input[type=range] {
+    color: #0b2a69;
+    font-family: arial;
+    background-color: #E9E9E8;
+    border-radius: 5pt;
+    height: 25px;
+}
+
+#regForm .form input[type=checkbox] {
+    position: relative;
+    color: #0b2a69;
+    font-family: arial;
+    background-color: #E9E9E8;
+    margin: 5pt;
+}
+
+#regForm .form input[type=range] {
+    width: 30%;
+}
+
+#regForm select {
+    width: 65pt;
+    margin-left: 10px;
+}
+
+#regForm .form .output {
+    height: 30px;
+}
+
+#regForm .form .submit {
+    height: 65px;
+}
+
+#regForm .form textarea {
+    display: inline-block;
+    background-color: #E9E9E8;
+    border-radius: 4%;
+    width: 15%;
+    height: 35pt;
+}
+
+#contact input[type=email] {
+    color: #0b2a69;
+    font-family: arial;
+    background-color: #E9E9E8;
+    padding: 3pt;
+    border-radius: 5pt;
+}
+
+.content #contact {
+    width: 20%;
+    margin: auto;
+}
+
+.content .contactQuery p {
+    font-size: 12pt;
+}
+
+.content .contactQuery {
+    width: 100%;
+}
+
+.content .contactQuery textarea {
+    width: 100%;
+    background-color: #E9E9E8;
+    border-radius: 4%;
+}
+
+.content .contactQuery .error {
+    color: #FF0000;
+}
+
+.content .mainContact {
+    height: 150px;
+}
+
+.content .kettleImage {
+    width: 325px;
+    float: left;
+    margin: 20px;
+    border-radius: 7%;
+}
+
+.content .barbellImage {
+    width: 325px;
+    float: center;
+    margin: 20px;
+    border-radius: 7%;
+}
+
+.content .ropesImage {
+    width: 325px;
+    float: right;
+    margin: 20px;
+    border-radius: 7%;
+}
+
+.content .mainInfo p {
+    font-size: 13pt;
+}
+
+.content .topInfo p {
+    font-size: 13pt;
+    font-weight: bold;
+}
+
+.content .mainInfo .left {
+    float: left;
+    margin-left: 100px;
+    border: 3px solid #0b2a69;
+    padding: 12px;
+    border-radius: 8%;
+}
+
+.content .mainInfo .right {
+    float: right;
+    margin-right: 100px;
+    border: 3px solid #0b2a69;
+    padding: 12px;
+    border-radius: 8%;
+}
+
+.content .mainInfo .left .leftServices {
+    text-align: left;
+    float: left;
+}
+
+.content .mainInfo .right .rightServices {
+    text-align: left;
+    float: left;
+}
+
+.content .address {
+    margin-left: 320px;
+    float: left;
+}
+
+.content .phoneNo {
+    margin-right: 320px;
+    float: right;
+}
+
+.content .mainContact p {
+    font-size: 15pt;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.login .label {
+    display: inline-block;
+    width: 100px;
+    margin-right: 10px;
+}
+
+.login input[type=text] {
+    color: #0b2a69;
+    font-family: arial;
+    background-color: #E9E9E8;
+    width: 15%;
+    padding: 3pt;
+    border-radius: 5pt;
+    margin: 5pt;
+}
+
+.login input[type=submit] {
+    color: #0b2a69;
+    font-family: arial;
+    background-color: #E9E9E8;
+    width: 15%;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    border-radius: 5pt;
+}
+
+.content .borderRounded {
+    border-radius: 25%;
+    height: 70px;
+    width: auto;
+}
+
+.content #official {
+    text-align: left;
+}
+
+.content #sitemaps h1 {
+    text-align: left;
+}
+
+.container table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
