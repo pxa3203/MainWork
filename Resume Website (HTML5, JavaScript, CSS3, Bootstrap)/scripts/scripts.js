@@ -3,12 +3,10 @@ function showContact() {
 
     if (selection == "United States") {
         hideContact();
-        document.getElementById("USContactAddr").style.display = "inline";
-        document.getElementById("USContactNo").style.display = "inline";
+        document.getElementById("USContact").style.display = "inline";
     } else if (selection == "Australia") {
         hideContact();
-        document.getElementById("AUContactAddr").style.display = "inline";
-        document.getElementById("AUContactNo").style.display = "inline";
+        document.getElementById("AUContact").style.display = "inline";
     } else if (selection == "select") {
         hideContact();
     }
@@ -16,8 +14,6 @@ function showContact() {
 }
 
 function hideContact() {
-    document.getElementById("USContactAddr").style.display = "none";
-    document.getElementById("USContactNo").style.display = "none";
-    document.getElementById("AUContactAddr").style.display = "none";
-    document.getElementById("AUContactNo").style.display = "none"
+    document.getElementById("USContact").style.display = "none";
+    document.getElementById("AUContact").style.display = "none";
 }

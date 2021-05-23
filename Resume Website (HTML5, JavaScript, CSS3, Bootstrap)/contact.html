@@ -38,7 +38,7 @@
     <div class="container" id="contactSelect">
         <div class="row">
             <div class="col-md-4">
-                <select name="contactInfo" id="contactInfo" onchange="showContact()">
+                <select class="form-control selcls" style="width:auto;" name="contactInfo" id="contactInfo" onchange="showContact()">
                 <option value="select">--select--</option>
                 <option value="United States">United States Contact Details</option>
                 <option value="Australia">Australia Contact Details</option>
@@ -50,31 +50,41 @@
     <div class="container" id="contactDisplayInfo">
         <div class="row">
             <div class="col-lg-12">
-                <div class="USContact" id="USContact">
-                    <div class="USContactAddr" id="USContactAddr">
-                        <h4>Address:</h4>
-                        <p>1230 204th PL SE</p>
-                        <p>Bothell, Washington, USA, 98012</p>
-                    </div>
-                    <div class="USContactNo" id="USContactNo">
-                        <h4>Phone No:</h4>
-                        <p>+1 (425) 786-3534</p>
-                    </div>
+                <div div class="table-responsive" id="USContact">
+                    <table class="text-white table table-condensed">
+                        <tr>
+                            <th>Address</th>
+                            <th>Phone No.</th>
+                            <th>Email</th>
+                        </tr>
+                        <tr>
+                            <td>1230 204th PL SE<br>Bothell, Washington, 98012</td>
+                            <td>+1 (425) 786-3534</td>
+                            <td><a href="mailto: pxa3203@hotmail.com" style="color: white;">pxa3203@hotmail.com</a></td>
+                        </tr>
+                    </table>
                 </div>
-                <div class="AUContactAddr" id="AUContactAddr">
-                    <h4>Address:</h4>
-                    <p>Unit 111 668 Bourke St.</p>
-                    <p>Melbourne, Victoria, Australia, 3000</p>
-                    </p>
-                </div>
-
-                <div class="AUContactNo" id="AUContactNo">
-                    <h4>Phone No:</h4>
-                    <p>+61 413 340 426</p>
+                <div div class="table-responsive" id="AUContact">
+                    <table class="text-white table table-condensed">
+                        <tr>
+                            <th>Address</th>
+                            <th>Phone No.</th>
+                            <th>Email:</th>
+                        </tr>
+                        <tr>
+                            <td>Unit 111 668 Bourke St.<br>Melbourne, Victoria, 3000</td>
+                            <td>+61 413 340 426</td>
+                            <td><a href="mailto: pxa3203@hotmail.com" style="color: white;">pxa3203@hotmail.com</a></td>
+                        </tr>
+                    </table>
                 </div>
             </div>
         </div>
     </div>
 </body>
+
+<footer>
+    <p>Patrick Armstrong 2021 &copy;</p>
+</footer>
 
 </html>
