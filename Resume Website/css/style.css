@@ -10,6 +10,27 @@ body {
     align-items: center;
 }
 
+#contact {
+    height: 25%;
+    color: #fff;
+}
+
+#contactSelect {
+    height: 1%;
+}
+
+#contactDisplayInfo {
+    color: #fff;
+}
+
+#USContact {
+    display: none;
+}
+
+#AUContact {
+    display: none;
+}
+
 .navbar {
     transition: all 0.4s;
 }
