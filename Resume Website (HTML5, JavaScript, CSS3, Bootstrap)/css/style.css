@@ -8,6 +8,10 @@
         margin-top: 110pt;
     }
     
+    #social {
+        margin-top: 100px;
+    }
+    
     #contact {
         margin-top: 80pt;
         margin-bottom: 28pt;
@@ -48,4 +52,8 @@
         width: 100%;
         color: white;
         text-align: center;
+    }
+    
+    th {
+        padding: 25px;
     }
