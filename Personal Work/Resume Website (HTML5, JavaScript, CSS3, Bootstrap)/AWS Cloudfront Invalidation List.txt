@@ -2,6 +2,7 @@
 /education.html
 /experience.html
 /contact.html
+/socials.html
 /assets/*
 /scripts/*
 /css/*

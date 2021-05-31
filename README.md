@@ -1,2 +1,3 @@
 # MainWork
-Main Repository to put work into, mainly for applications and proof of experience.
+Welcome to Patrick Armstrong's repo!
+You will find University Projects and Personal Projects used to demonstrate skills and experience.
