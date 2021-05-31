@@ -1,4 +1,4 @@
-# first python course module, avaraging two user entered numbers
+#first python course module, averaging two user entered numbers
 
 print("This program calculates the average of two numbers.")
 

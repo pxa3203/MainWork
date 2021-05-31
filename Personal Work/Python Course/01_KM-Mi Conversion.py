@@ -1,4 +1,4 @@
-# first python course module, making KM to MI converter
+#first python course module, making KM to MI converter
 
 #asking user how many KM's they would like to convert to MI, then saving in variable
 kilometers = float(input("How many Kilometers would you like to convert to Miles?"))
