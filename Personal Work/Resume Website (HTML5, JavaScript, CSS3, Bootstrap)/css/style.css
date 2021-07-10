@@ -57,3 +57,14 @@
     th {
         padding: 25px;
     }
+    
+    #workplace {
+        margin-top: 10pt;
+        margin-bottom: 15pt;
+        color: #fff;
+        font-style: italic;
+    }
+    
+    #leftExperience {
+        margin-left: 80pt;
+    }
