@@ -1,0 +1,249 @@
+/* General CSS for Patrick Armstrong Resume Site */
+
+body {
+    background-image: url('../assets/images/background.jpg');
+}
+
+.content {
+    color: #FFF;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* webpage layout CSS */
+
+.column {
+    width: 48%;
+    float: left;
+    color: #FFF;
+    margin-left: 2%;
+}
+
+.column h4 {
+    font-size: 19pt;
+    margin-bottom: 0%;
+}
+
+.column h5 {
+    font-size: 15pt;
+    margin-bottom: 0%;
+}
+
+.column h6 {
+    font-size: 9pt;
+    margin-top: 10pt;
+    margin-bottom: 25pt;
+    color: #fff;
+    font-style: italic;
+}
+
+.wide-column {
+    width: 100%;
+    text-align: center;
+    color: #FFF;
+    text-decoration: none;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.wide-column a {
+    color: #FFF;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.wide-column a:hover {
+    color: #FFF;
+    text-shadow: 0 0px 12px #FFF;
+    text-decoration: none;
+}
+
+.wide-column table {
+    margin-left: 15%;
+    width: 70%;
+    text-align: center;
+}
+
+.about-column {
+    font-size: 18pt;
+    width: 70%;
+    color: #FFF;
+    text-decoration: none;
+    margin-left: 15%;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.wide-column h3 {
+    font-size: 22pt;
+}
+
+
+/* essentially makes new line when the row class is used */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* navbar CSS */
+
+.navbar {
+    font-size: 18pt;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 1%;
+    width: 50%;
+    overflow: hidden;
+    text-align: center;
+}
+
+.navbar a {
+    display: inline-block;
+    color: #FFF;
+    text-align: center;
+    padding: 10px 5px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar a:hover {
+    color: #FFF;
+    text-shadow: 0 0px 12px #FFF;
+    text-decoration: none;
+}
+
+.navbar .active {
+    text-shadow: 0 0px 12px #FFF;
+    color: white;
+}
+
+.navbar .icon {
+    display: none;
+}
+
+
+/* index.html (Home) CSS */
+
+.photoColumn {
+    margin-top: 75pt;
+    margin-left: 25%;
+}
+
+.photoColumn img {
+    max-width: 60%;
+    height: auto;
+    margin-left: 20%;
+    transition: all 0.2s ease-in-out;
+}
+
+.photoColumn img:hover {
+    height: auto;
+    margin-left: 20%;
+    box-shadow: 0 0px 12px #FFF;
+}
+
+.photoColumn h4 {
+    font-size: 12pt;
+    text-align: center;
+    color: #FFF;
+}
+
+.photoColumn a {
+    color: white;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.photoColumn a:hover {
+    color: white;
+    text-shadow: 0 0px 12px #FFF;
+}
+
+
+/* Contact page CSS */
+
+#USContact {
+    display: none;
+}
+
+#AUContact {
+    display: none;
+}
+
+.wide-column select {
+    border-radius: 25px;
+}
+
+
+/* socials.html specific CSS */
+
+.social-column {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: #FFF;
+    text-decoration: none;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+
+/* footer CSS */
+
+footer {
+    font-family: Arial, Helvetica, sans-serif;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+
+/* Adjusts column and photo based on resolution of client screen */
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+    .navbar a:not(:first-child) {
+        display: none;
+    }
+    .navbar a.icon {
+        float: right;
+        display: block;
+    }
+    .photoColumn {
+        width: 50%;
+    }
+    .about-column {
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .photoColumn {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navbar.responsive {
+        position: relative;
+    }
+    .navbar.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .navbar.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
